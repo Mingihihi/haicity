@@ -15,7 +15,7 @@ setTimeout(() => {
 // func
 
 yesBtn.addEventListener("click", () => {
-  question.innerHTML = "Tới công chuyện với bà mày rồi =)))))";
+  question.innerHTML = "trann khogg thuongwww mh nuaaa òiii 😭😭😭😭";
   gif.src =
     "assets/image/gif2.gif";
   yesBtn.style.display = "none";
