@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'linotte';
+  src: url("./fonts/Linotte.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(243, 225, 237);
+  font-family: 'linotte', Arial, sans-serif;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.animation {
+  animation: fadeIn 1s forwards;
+}
+
+.gif {
+  height: 70%;
+  width: 70%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.7em;
+  color: #e94d58;
+  margin: 15px 0;
+}
+
+.btn-group {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+button {
+  position: absolute;
+  width: 150px;
+  height: inherit;
+  color: rgb(235, 229, 229);
+  font-size: 1.2em;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #c0d6e4;
+  font-size: 1.2em;
+  font-family: 'linotte', Arial, sans-serif;
+  user-select: none;
+
+  transition: filter 300ms;
+}
+
+button:nth-child(1) {
+  margin-left: -200px;
+  background: #e26878;
+  border-color: #e26878;
+}
+
+button:nth-child(1):hover {
+  filter: drop-shadow(0 0 5px rgba(255, 99, 99, 0.8));
+}
+
+button:nth-child(2) {
+  margin-right: -200px;
+  background: rgb(235, 224, 224);
+  color: #e22242;
+  border-color: rgb(240, 211, 211);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
